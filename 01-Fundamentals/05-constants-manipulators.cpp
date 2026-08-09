@@ -1,4 +1,3 @@
-```cpp
 #include <iostream>
 #include <iomanip>
 
@@ -10,7 +9,7 @@ int main()
 
     const int maxScore = 100;
 
-    cout << "Maximum Score: " << maxScore << endl;
+    cout<< "Maximum Score: " << maxScore <<endl;
 
     // Uncommenting the line below will cause an error
     // because 'maxScore' is a constant.
@@ -23,12 +22,12 @@ int main()
     int marks = 86;
     int totalMarks = 1245;
 
-    cout << "\nWithout setw:" << endl;
+    cout << "Without setw:" << endl;
     cout << "Students: " << students << endl;
     cout << "Marks: " << marks << endl;
     cout << "Total Marks: " << totalMarks << endl;
 
-    cout << "\nUsing setw:" << endl;
+    cout << "Using setw:" << endl;
     cout << "Students: " << setw(6) << students << endl;
     cout << "Marks: " << setw(6) << marks << endl;
     cout << "Total Marks: " << setw(6) << totalMarks << endl;
@@ -45,4 +44,3 @@ int main()
 
     return 0;
 }
-```
