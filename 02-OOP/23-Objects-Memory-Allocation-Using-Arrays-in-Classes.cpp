@@ -1,46 +1,46 @@
 #include <iostream>
 using namespace std;
-class shop
+class bank
 {
 private:
-    int ItemPrice[100];
-    int ItemId[100];
+    int acctBlnc[100];
+    int acctID[100];
     int counter;
 
 public:
-    void initCounter(void)
+    void initCounter()
     {
         counter = 0;
     }
-    void setPrice(void);
-    void display(void);
+    void GetInfo();
+    void Displayinfo();
 };
-void shop::setPrice(void)
+void bank::GetInfo()
 {
-    cout << "Enter the ID of Item NO. " << counter + 1 << " = " << endl;
-    cin >> ItemId[counter];
-    cout << "Enter the Price of Item : " << endl;
-    cin >> ItemPrice[counter];
+    cout << "Enter the account ID of No. " << counter + 1 << " account ";
+    cin >> acctID[counter];
+    cout << "Enter the Balance of Account : ";
+    cin >> acctBlnc[counter];
     counter++;
 }
-void shop::display(void)
+void bank::Displayinfo()
 {
     for (int i = 0; i < counter; i++)
     {
-        cout << "The price of Item with ID " << ItemId[i] << " is " << ItemPrice[i] << endl;
+        cout << "The Balance of Account with ID " << acctID[i] << " is " << acctBlnc[i] << endl;
     }
 }
 
 int main()
 {
-    shop dukan;
-    dukan.initCounter();
-    dukan.setPrice();
-    dukan.setPrice();
-    dukan.setPrice();
-    dukan.setPrice();
-    dukan.setPrice();
-    dukan.display();
+    bank z;
+    z.initCounter();
+    z.GetInfo();
+    z.GetInfo();
+    z.GetInfo();
+    z.GetInfo();
+    z.GetInfo();
+    z.Displayinfo();
 
     return 0;
 }
